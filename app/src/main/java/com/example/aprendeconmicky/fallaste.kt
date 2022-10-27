@@ -17,7 +17,7 @@ class fallaste : AppCompatActivity() {
 
             val botonvolvervideo = findViewById<ImageButton>(R.id.volvervideo)
             botonvolvervideo.setOnClickListener {
-                val lanzar = Intent(this, ver_video::class.java)
+                val lanzar = Intent(this, video::class.java)
                 startActivity(lanzar)
             }
         }

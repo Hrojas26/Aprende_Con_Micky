@@ -13,7 +13,7 @@ class aprenderNumeros : AppCompatActivity() {
 
         val botonaprendernumeros = findViewById<ImageButton>(R.id.botonnumeros)
         botonaprendernumeros.setOnClickListener {
-            val lanzar = Intent(this, ver_video::class.java)
+            val lanzar = Intent(this, video::class.java)
             startActivity(lanzar)
         }
     }

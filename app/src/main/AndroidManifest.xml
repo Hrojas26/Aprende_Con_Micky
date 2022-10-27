@@ -13,6 +13,12 @@
         android:theme="@style/Theme.AprendeConMicky"
         tools:targetApi="31">
         <activity
+            android:name=".video"
+            android:exported="false" />
+        <activity
+            android:name=".VIDEO"
+            android:exported="false" />
+        <activity
             android:name=".fallaste"
             android:exported="false" />
         <activity
