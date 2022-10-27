@@ -15,7 +15,6 @@ class Actividad : AppCompatActivity() {
         botonnueve.setOnClickListener {
             val lanzar = Intent(this, felicitaciones::class.java)
             startActivity(lanzar)
-
             }
     }
 }

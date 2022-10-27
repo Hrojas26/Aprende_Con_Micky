@@ -22,14 +22,15 @@ class MainActivity : AppCompatActivity() {
         boton1.setOnClickListener {
             val mp = MediaPlayer.create(this, R.raw.bienvenidass)
             mp.start()
-
-
-            val botoninicio = findViewById<ImageButton>(R.id.botonlindo)
-            botoninicio.setOnClickListener {
-                val lanzar = Intent(this, aprenderNumeros::class.java)
-                startActivity(lanzar)
-            }
         }
+
+        val botoninicio = findViewById<ImageButton>(R.id.botonlindo)
+        botoninicio.setOnClickListener {
+            val lanzar = Intent(this, aprenderNumeros::class.java)
+            startActivity(lanzar)
+
+        }
+
     }
 }
 
