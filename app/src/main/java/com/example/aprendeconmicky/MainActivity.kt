@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.media.MediaPlayer
+import android.view.KeyEvent
 import android.widget.ImageButton
 
 class MainActivity : AppCompatActivity() {
@@ -32,6 +33,14 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        val lanzar = Intent(this, MainActivity::class.java)
+        startActivity(lanzar)
+    }
+
+
 }
 
 

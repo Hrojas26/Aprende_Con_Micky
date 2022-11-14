@@ -13,34 +13,31 @@
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/pantalla6" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/luser" />
 
-    <ImageButton
-        android:id="@+id/volver"
-        android:layout_width="318dp"
-        android:layout_height="49dp"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+    <ImageView
+        android:id="@+id/volveraintentar"
+        android:layout_width="401dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView5"
-        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="@+id/imageView5"
         app:layout_constraintTop_toTopOf="@+id/imageView5"
-        app:layout_constraintVertical_bias="0.326"
+        app:layout_constraintVertical_bias="0.393"
         tools:srcCompat="@tools:sample/avatars" />
 
-    <ImageButton
-        android:id="@+id/volvervideo"
-        android:layout_width="318dp"
-        android:layout_height="49dp"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+    <ImageView
+        android:id="@+id/volveraintentar2"
+        android:layout_width="401dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView5"
-        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="@+id/imageView5"
         app:layout_constraintTop_toTopOf="@+id/imageView5"
-        app:layout_constraintVertical_bias="0.442"
         tools:srcCompat="@tools:sample/avatars" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

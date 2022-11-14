@@ -13,24 +13,22 @@
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/pantalla5" />
+        app:srcCompat="@drawable/terminaste" />
 
-    <ImageButton
-        android:id="@+id/botonjugarnew"
-        android:layout_width="263dp"
-        android:layout_height="94dp"
-        android:backgroundTint="#00FFFFFF"
-        android:scaleType="fitXY"
+    <ImageView
+        android:id="@+id/denuevo"
+        android:layout_width="269dp"
+        android:layout_height="63dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView4"
-        app:layout_constraintEnd_toEndOf="@+id/imageView4"
-        app:layout_constraintHorizontal_bias="0.412"
-        app:layout_constraintStart_toStartOf="@+id/imageView4"
-        app:layout_constraintTop_toTopOf="@+id/imageView4"
-        app:layout_constraintVertical_bias="0.94"
-        app:srcCompat="@drawable/botonjugardenuevo"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.422"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.914"
+        tools:srcCompat="@tools:sample/avatars" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
+import android.widget.ImageView
 
 class Actividad : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,8 +14,25 @@ class Actividad : AppCompatActivity() {
 
         val botonnueve = findViewById<ImageButton>(R.id.boton9)
         botonnueve.setOnClickListener {
-            val lanzar = Intent(this, felicitaciones::class.java)
+            val lanzar = Intent(this, actividad2::class.java)
             startActivity(lanzar)
-            }
+        }
+
+        val falla1 = findViewById<ImageView>(R.id.F1)
+        falla1.setOnClickListener {
+            val lanzar = Intent(this, fallaste::class.java)
+            startActivity(lanzar)
+        }
+
+        val falla2 = findViewById<ImageView>(R.id.F2)
+        falla2.setOnClickListener {
+            val lanzar = Intent(this, fallaste::class.java)
+            startActivity(lanzar)
+        }
+    }
+    override fun onBackPressed() {
+        super.onBackPressed()
+        val lanzar = Intent(this, video::class.java)
+        startActivity(lanzar)
     }
 }
