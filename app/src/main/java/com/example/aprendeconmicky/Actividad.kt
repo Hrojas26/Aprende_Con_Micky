@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.ImageView
+import android.media.MediaPlayer
 
 class Actividad : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,6 +17,8 @@ class Actividad : AppCompatActivity() {
         botonnueve.setOnClickListener {
             val lanzar = Intent(this, actividad2::class.java)
             startActivity(lanzar)
+            val mp = MediaPlayer.create(this, R.raw.nice22)
+            mp.start()
         }
 
         val falla1 = findViewById<ImageView>(R.id.F1)

@@ -4,6 +4,7 @@
     package="com.example.aprendeconmicky">
 
     <application
+        android:label="@string/app_name"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -33,10 +34,7 @@
         <activity
             android:name=".video"
             android:exported="false" />
-        <activity
-            android:name=".VIDEO"
-            android:exported="false" />
-        <activity
+                <activity
             android:name=".fallaste"
             android:exported="false" />
         <activity
@@ -45,9 +43,7 @@
         <activity
             android:name=".Actividad"
             android:exported="false" />
-        <activity
-            android:name=".ver_video"
-            android:exported="false" />
+
         <activity
             android:name=".aprenderNumeros"
             android:exported="false" />

@@ -4,6 +4,9 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
+import android.media.MediaPlayer
+
+
 
 class actividad3 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,6 +29,8 @@ class actividad3 : AppCompatActivity() {
         seis.setOnClickListener {
             val lanzar = Intent(this, actividad4::class.java)
             startActivity(lanzar)
+            val mp = MediaPlayer.create(this, R.raw.nice22)
+            mp.start()
 
         }
     }

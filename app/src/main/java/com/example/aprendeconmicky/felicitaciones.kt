@@ -12,6 +12,7 @@ class felicitaciones : AppCompatActivity() {
         setContentView(R.layout.activity_felicitaciones)
 
 
+
         val denuevo = findViewById<ImageView>(R.id.denuevo)
         denuevo.setOnClickListener {
             val lanzar = Intent(this, aprenderNumeros::class.java)
@@ -22,5 +23,6 @@ class felicitaciones : AppCompatActivity() {
         super.onBackPressed()
         val lanzar = Intent(this, MainActivity::class.java)
         startActivity(lanzar)
-    }
+        }
+
     }

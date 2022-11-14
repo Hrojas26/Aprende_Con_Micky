@@ -1,6 +1,7 @@
 package com.example.aprendeconmicky
 
 import android.content.Intent
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
@@ -27,6 +28,8 @@ class actividad5 : AppCompatActivity() {
         ocho.setOnClickListener {
             val lanzar = Intent(this, actividad6::class.java)
             startActivity(lanzar)
+            val mp = MediaPlayer.create(this, R.raw.nice22)
+            mp.start()
         }
     }
 

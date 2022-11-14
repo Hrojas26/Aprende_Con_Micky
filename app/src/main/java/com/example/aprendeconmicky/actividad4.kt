@@ -1,9 +1,11 @@
 package com.example.aprendeconmicky
 
 import android.content.Intent
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
+
 
 class actividad4 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,6 +33,8 @@ class actividad4 : AppCompatActivity() {
         uno.setOnClickListener {
             val lanzar = Intent(this, actividad5::class.java)
             startActivity(lanzar)
+            val mp = MediaPlayer.create(this, R.raw.nice22)
+            mp.start()
         }
     }
     override fun onBackPressed() {

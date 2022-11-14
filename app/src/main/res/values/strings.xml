@@ -1,4 +1,5 @@
 <resources>
+    <string name="app_name">APRENDE CON MICKY</string>
     <string name="text1">pantalla 1</string>
     <string name="boton1">JUGAR </string>
 </resources>
